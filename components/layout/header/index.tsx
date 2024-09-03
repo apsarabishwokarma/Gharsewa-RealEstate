@@ -8,7 +8,7 @@ export default function Header() {
       <main className="container mx-auto">
         <div className="flex items-center">
           <div>logo and name</div>
-          <Text variant="h1">Welcome</Text>
+          <Text variant="h1">Welcome to Gharsewa</Text>
           <NavBar />
           <UserNavBar />
         </div>
