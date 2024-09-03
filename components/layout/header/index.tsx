@@ -8,12 +8,16 @@ export default function Header() {
     <>
       <main className="container mx-auto">
         <div className="flex items-center">
-          <div>logo and name</div>
-          <Text variant="h1">Welcome to Gharsewa</Text>
+          <div className="flex gap-1">
+            <Icons.logo />
+            <Text variant="xl" className="font-bold">
+              Gharsewa
+            </Text>
+          </div>
+
           <NavBar />
           <UserNavBar />
         </div>
-        <Icons.logo />
       </main>
     </>
   );
