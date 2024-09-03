@@ -1,3 +1,4 @@
+import { Icons } from "@/components/ui/icon";
 import Text from "@/components/ui/text";
 import NavBar from "./nav-bar";
 import UserNavBar from "./user-navbar";
@@ -12,6 +13,7 @@ export default function Header() {
           <NavBar />
           <UserNavBar />
         </div>
+        <Icons.logo />
       </main>
     </>
   );
