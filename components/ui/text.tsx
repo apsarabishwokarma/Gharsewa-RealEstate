@@ -22,7 +22,7 @@ export default function Text({
     case "h3":
       textStyle = cx("text-[32px] leading-[1.25]");
     case "h4":
-      textStyle = cx("text-[24] leading-[1.5]");
+      textStyle = cx("text-[24px] leading-[1.5]");
     case "xl":
       textStyle = cx("text-[20px] leading-[1.6]");
     case "lg":
