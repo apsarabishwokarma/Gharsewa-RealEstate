@@ -2,41 +2,41 @@ import { ReactNode } from "react";
 
 export default function Button({
   children,
-  type,
+  variant,
   size,
   className,
 }: {
   children: ReactNode;
-  type?: "primary" | "secondary" | "destructive" | "success" | "ghost";
-  size?: "small" | "medium" | "large";
+  variant?: "primary" | "secondary" | "destructive" | "success" | "ghost";
+  size?: "sm" | "md" | "lg";
   className?: string;
 }) {
   const baseStyles = "rounded-lg justify-center item-center text-sm font-bold";
-  const typeStyles =
-    type === "primary"
+  const variantStyles =
+    variant === "primary"
       ? "bg-primary text-white"
-      : type === "secondary"
+      : variant === "secondary"
       ? " border-2 border-primary-92 text-primary"
-      : type === "success"
+      : variant === "success"
       ? "bg-green-500"
-      : type === "destructive"
+      : variant === "destructive"
       ? "bg-red-500"
-      : type === "ghost"
+      : variant === "ghost"
       ? "hover:bg-accent hover:text-accent-foreground"
       : "";
 
   const sizeStyles =
-    size === "small"
+    size === "sm"
       ? "px-4 py-[10px]"
-      : size === "medium"
+      : size === "md"
       ? "px-6 py-3"
-      : size === "large"
+      : size === "lg"
       ? "px-8 py-4 "
       : "";
 
   return (
     <button
-      className={`${baseStyles} ${typeStyles} ${sizeStyles} ${className}`}
+      className={`${baseStyles} ${variantStyles} ${sizeStyles} ${className}`}
     >
       {children}
     </button>

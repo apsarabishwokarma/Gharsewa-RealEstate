@@ -3,11 +3,11 @@ import Button from "@/components/ui/button";
 export default function UserNavBar() {
   return (
     <main className="container mx-auto">
-      <div className="lg:flex hidden items-center">
-        <Button type="secondary" size="medium">
+      <div className="lg:flex gap-4 hidden items-center">
+        <Button variant="secondary" size="md">
           Login
         </Button>
-        <Button type="primary" size="medium">
+        <Button variant="primary" size="md">
           Sign Up
         </Button>
       </div>
