@@ -7,7 +7,7 @@ export default function Button({
   className,
 }: {
   children: ReactNode;
-  type?: "primary" | "secondary" | "destructive" | "success";
+  type?: "primary" | "secondary" | "destructive" | "success" | "ghost";
   size?: "small" | "medium" | "large";
   className?: string;
 }) {
@@ -21,6 +21,8 @@ export default function Button({
       ? "bg-green-500"
       : type === "destructive"
       ? "bg-red-500"
+      : type === "ghost"
+      ? "hover:bg-accent hover:text-accent-foreground"
       : "";
 
   const sizeStyles =
